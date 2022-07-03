@@ -5,7 +5,7 @@ PATH=8080
 #pull
 docker pull $(IMAGE)
 #run
-docker run -itd  --name $(NAME) -e RUN="TRUE" -P 8080:8000 $(IMAGE)
+docker run -itd  --name $(NAME) -e RUN="TRUE" -P8080:8000 $(IMAGE)
 #stop
 docker stop $(IMAGE)
 #remove
